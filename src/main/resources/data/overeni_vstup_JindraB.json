@@ -1,0 +1,13 @@
+﻿{
+  "duvod": "Vstup",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Břetislav",
+    "prijmeni": "Jindra",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "2009-09-25",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": null,
+    "trvalyPobyt": null
+  }
+}

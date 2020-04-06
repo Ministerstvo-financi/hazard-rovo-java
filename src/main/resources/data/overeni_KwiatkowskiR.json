@@ -1,0 +1,28 @@
+{
+  "duvod": "Registrace",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Radosława",
+    "prijmeni": "Kwiatkowski",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "1980-12-13",
+    "statniObcanstvi": "PL",
+    "mistoNarozeni": {
+      "mistoNarozeniKod": null,
+      "mistoNarozeniCR": {
+        "obec": "Dýšina",
+        "okres": "Plzeň-město"
+      },
+	  "mistoNarozeniSvet": null	  	  
+    },
+    "trvalyPobyt": {
+      "trvalyPobytSvet": {
+        "ulice": "Barska",
+        "cisloPopisneEvidencni": 1,
+        "obec": "Krakov",
+        "psc": "30-307",
+        "stat": "PL"
+      }
+	}
+  }
+}

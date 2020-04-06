@@ -1,0 +1,28 @@
+{
+  "duvod": "Registrace",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Otto",
+    "prijmeni": "Hermann",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "1979-11-06",
+    "statniObcanstvi": "DE",
+    "mistoNarozeni": {
+      "mistoNarozeniKod": null,
+      "mistoNarozeniCR": null,
+	  "mistoNarozeniSvet": {
+        "misto": "München",
+        "stat": "DE"
+      }	  	  
+    },
+    "trvalyPobyt": {
+      "trvalyPobytSvet": {
+        "ulice": "Arnimstraße",
+        "cisloPopisneEvidencni": 14,
+        "obec": "München",
+        "psc": 81369,
+        "stat": "DE"
+      }
+	}
+  }
+}

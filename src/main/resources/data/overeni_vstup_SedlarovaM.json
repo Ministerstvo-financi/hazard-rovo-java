@@ -1,0 +1,25 @@
+﻿{
+  "duvod": "Vstup",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Martina",
+    "prijmeni": "Sedlářová",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "2010-07-16",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": {
+      "mistoNarozeniKod": 554782,
+      "mistoNarozeniCR": null,
+	  "mistoNarozeniSvet": null	  	  
+    },
+    "trvalyPobyt": {
+      "trvalyPobytCR": {
+        "ulice": "Bělehradská",
+        "cisloPopisneEvidencni": 10,
+        "cisloOrientacni": 79,
+        "obec": "Praha",
+        "psc": 12000
+      }
+	}
+  }
+}

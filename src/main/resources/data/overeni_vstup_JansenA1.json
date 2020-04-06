@@ -1,0 +1,27 @@
+{
+  "duvod": "Vstup",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Amelia",
+    "prijmeni": "Jansen",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "2006-11-26",
+    "statniObcanstvi": "NL",
+    "mistoNarozeni": {
+      "mistoNarozeniCR": null,
+	  "mistoNarozeniSvet": {
+        "misto": "Rotterdam",
+        "stat": "NL"
+      }	  	  
+    },
+    "trvalyPobyt": {
+      "trvalyPobytSvet": {
+        "ulice": "Karper",
+        "cisloPopisneEvidencni": 12,
+        "obec": "Rotterdam",
+        "psc": "2986 GA",
+        "stat": "NL"
+      }
+	}
+  }
+}

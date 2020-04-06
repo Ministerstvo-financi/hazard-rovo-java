@@ -1,0 +1,27 @@
+{
+  "duvod": "Registrace",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Petr",
+    "prijmeni": "Nowak",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "1985-10-07",
+    "statniObcanstvi": "DE",
+    "mistoNarozeni": {
+      "mistoNarozeniCR": null,
+	  "mistoNarozeniSvet": {
+        "misto": "Berlin",
+        "stat": "DE"
+      }	  	  
+    },
+    "trvalyPobyt": {
+      "trvalyPobytSvet": {
+        "ulice": "Angerweg",
+        "cisloPopisneEvidencni": 50,
+        "obec": "Bad Kohlgrub",
+        "psc": 82433,
+        "stat": "DE"
+      }
+	}
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "duvod": "Registrace",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Marika",
+    "prijmeni": "Janečková",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "2010-07-23",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": {
+      "mistoNarozeniCR": {
+        "obec": "Náchod",
+        "okres": "Náchod"
+      },
+	  "mistoNarozeniSvet": null	  	  
+    },
+    "trvalyPobyt": {
+      "trvalyPobytCR": {
+        "ulice": "Smetanova",
+        "cisloPopisneEvidencni": 1460,
+        "obec": "Náchod",
+        "psc": 54701
+      }
+	}
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "duvod": "Registrace",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Zuzana",
+    "prijmeni": "Matulová",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "1963-02-21",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": {
+      "mistoNarozeniKod": null,
+      "mistoNarozeniCR": {
+        "obec": "Arnoltice",
+        "okres": "Děčín"
+      },
+	  "mistoNarozeniSvet": null	  	  
+    },
+	"trvalyPobyt": {
+    "trvalyPobytKod": 263605
+	}
+  }
+}

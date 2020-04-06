@@ -1,0 +1,25 @@
+{
+	"hid": "1f381afc-d2f2-42ee-9220-518302b02cde",
+	"osoba": {
+		"jmeno": "ERNST",
+		"prijmeni": "GOLDSTEIN",
+		"rodnePrijmeni": null,
+		"datumNarozeni": "1979-08-23",
+		"statniObcanstvi": "DE",
+		"mistoNarozeni": {
+			"mistoNarozeniSvet": {
+				"misto": "München",
+				"stat": "DE"
+			}
+		},
+		"trvalyPobyt": {
+			"trvalyPobytSvet": {
+				"ulice": "Westendstraße",
+				"cisloPopisneEvidencni": 220,
+				"obec": "München",
+				"psc": 80686,
+				"stat": "DE"
+			}
+		}
+	}
+}

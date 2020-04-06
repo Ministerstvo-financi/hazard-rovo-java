@@ -1,0 +1,28 @@
+{
+  "duvod": "Registrace",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Andrij",
+    "prijmeni": "Franko",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "1971-10-17",
+    "statniObcanstvi": "UA",
+    "mistoNarozeni": {
+      "mistoNarozeniKod": null,
+      "mistoNarozeniCR": null,
+	  "mistoNarozeniSvet": {
+        "misto": "Kyjev",
+        "stat": "UA"
+      }	  	  
+    },
+    "trvalyPobyt": {
+      "trvalyPobytSvet": {
+        "ulice": "Hryhoriia Andriushchenka St",
+        "cisloPopisneEvidencni": 19,
+        "obec": "Kyiv",
+        "psc": null,
+        "stat": "UA"
+      }
+	}
+  }
+}

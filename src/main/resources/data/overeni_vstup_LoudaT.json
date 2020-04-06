@@ -1,0 +1,26 @@
+﻿{
+  "duvod": "Vstup",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Tibor",
+    "prijmeni": "Louda",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "2008-03-08",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": {
+      "mistoNarozeniCR": {
+        "obec": "Hradec Králové",
+        "okres": "Hradec Králové"
+      },
+	  "mistoNarozeniSvet": null	  	  
+    },
+    "trvalyPobyt": {
+      "trvalyPobytCR": {
+        "ulice": "Polská",
+        "cisloPopisneEvidencni": 427,
+        "obec": "Olomouc",
+        "psc": 77900
+      }
+	}
+  }
+}

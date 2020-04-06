@@ -1,0 +1,27 @@
+{
+  "duvod": "Registrace",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Megan",
+    "prijmeni": "Paige",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "2010-06-18",
+    "statniObcanstvi": "GB",
+    "mistoNarozeni": {
+      "mistoNarozeniCR": null,
+	  "mistoNarozeniSvet": {
+        "misto": "London",
+        "stat": "GB"
+      }	  	  
+    },
+    "trvalyPobyt": {
+      "trvalyPobytSvet": {
+        "ulice": "Verity Cl",
+        "cisloPopisneEvidencni": 68,
+        "obec": "London",
+        "psc": "W11-4HE",
+		"stat": "GB"
+      }
+	}
+  }
+}

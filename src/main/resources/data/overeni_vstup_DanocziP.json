@@ -1,0 +1,13 @@
+{
+  "duvod": "Vstup",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Pavel",
+    "prijmeni": "Danoczi",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "1979-04-18",
+    "statniObcanstvi": "SK",
+    "mistoNarozeni": null,
+    "trvalyPobyt": null
+  }
+}

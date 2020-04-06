@@ -1,0 +1,28 @@
+{
+  "duvod": "Registrace",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Hana",
+    "prijmeni": "Paur",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "1982-05-01",
+    "statniObcanstvi": "DK",
+    "mistoNarozeni": {
+      "mistoNarozeniKod": null,
+      "mistoNarozeniCR": null,
+	  "mistoNarozeniSvet": {
+        "misto": "Lyon",
+        "stat": "FR"
+      }	  	  
+    },
+    "trvalyPobyt": {
+      "trvalyPobytSvet": {
+        "ulice": null,
+        "cisloPopisneEvidencni": null,
+        "obec": "Lyon",
+        "psc": null,
+        "stat": "FR"
+      }
+	}
+  }
+}

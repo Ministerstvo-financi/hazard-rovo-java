@@ -1,0 +1,13 @@
+﻿{
+  "duvod": "Vstup",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Gabriela",
+    "prijmeni": "Vojtíšková",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "1969-07-01",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": null,
+    "trvalyPobyt": null
+  }
+}

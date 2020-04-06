@@ -1,0 +1,25 @@
+{
+  "duvod": "Registrace",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Petr",
+    "prijmeni": "Mladý",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "2008-05-07",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": {
+      "mistoNarozeniCR": {
+        "obec": "Toužim",
+        "okres": "Karlovy Vary"
+      },
+	  "mistoNarozeniSvet": null	  	  
+    },
+    "trvalyPobyt": {
+      "trvalyPobytCR": {
+        "cisloPopisneEvidencni": 44,
+        "obec": "Dolní Podluží",
+        "psc": 40755
+      }
+	}
+  }
+}

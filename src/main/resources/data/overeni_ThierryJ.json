@@ -1,0 +1,28 @@
+{
+  "duvod": "Registrace",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Julien",
+    "prijmeni": "Thierry",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "1981-01-12",
+    "statniObcanstvi": "FR",
+    "mistoNarozeni": {
+      "mistoNarozeniKod": null,
+      "mistoNarozeniCR": null,
+	  "mistoNarozeniSvet": {
+        "misto": "Paris",
+        "stat": "FR"
+      }	  	  
+    },
+    "trvalyPobyt": {
+      "trvalyPobytSvet": {
+        "ulice": "Rue la Quintinie",
+        "cisloPopisneEvidencni": 40,
+        "obec": "Paris",
+        "psc": 75015,
+        "stat": "FR"
+      }
+	}
+  }
+}

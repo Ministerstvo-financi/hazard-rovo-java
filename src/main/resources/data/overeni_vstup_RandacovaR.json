@@ -1,0 +1,28 @@
+﻿{
+  "duvod": "Vstup",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Radka",
+    "prijmeni": "Randačová",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "1980-12-13",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": {
+      "mistoNarozeniKod": null,
+      "mistoNarozeniCR": {
+        "obec": "Dýšina",
+        "okres": "Plzeň-město"
+      },
+	  "mistoNarozeniSvet": null	  	  
+    },
+    "trvalyPobyt": {
+      "trvalyPobytSvet": {
+        "ulice": "Barska",
+        "cisloPopisneEvidencni": 1,
+        "obec": "Krakov",
+        "psc": "30-307",
+        "stat": "PL"
+      }
+	}
+  }
+}

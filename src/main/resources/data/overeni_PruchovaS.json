@@ -1,0 +1,26 @@
+{
+  "duvod": "Registrace",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Sandra",
+    "prijmeni": "Průchová",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "1982-05-01",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": {
+      "mistoNarozeniCR": {
+        "obec": "Kasejovice",
+        "okres": "Plzeň-jih"
+      },
+	  "mistoNarozeniSvet": null	  	  
+    },
+    "trvalyPobyt": {
+      "trvalyPobytCR": {
+        "ulice": null,
+        "cisloPopisneEvidencni": 1,
+        "obec": "Arnoltice",
+        "psc": 40714
+      }
+	}
+  }
+}

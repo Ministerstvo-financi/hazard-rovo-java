@@ -1,0 +1,8 @@
+/target/
+/output.json
+/bin/
+.idea
+*.iml
+.classpath
+.project
+.settings

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://hazard.mfcr.cz/rovo/v1"
+           xmlns="http://hazard.mfcr.cz/rovo/v1"
+           elementFormDefault="qualified">
+    <xs:include schemaLocation="aisgTypes.xsd" id="hraciTypes"/>
+
+    <xs:element name="OveritOsobuRequest">
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="BaseRequestType">
+                    <xs:sequence>
+                        <xs:element name="Duvod" type="DuvodZadostiType"/>
+                        <xs:choice>
+                            <xs:element name="HID" type="UUIDType"/>
+                            <xs:element name="Osoba" type="OsobaType"/>
+                        </xs:choice>
+                    </xs:sequence>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="OveritOsobuResponse">
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="BaseResponseType">
+                    <xs:sequence>
+                        <xs:element name="HID" type="UUIDType" minOccurs="0"/>
+                        <xs:group ref="VysledkyOvereniGroup"/>
+                    </xs:sequence>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="ZmenitUdajeOsobyRequest">
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="BaseRequestType">
+                    <xs:sequence>
+                        <xs:element name="HID" type="UUIDType"/>
+                        <xs:element name="Osoba" type="OsobaType"/>
+                    </xs:sequence>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="ZmenitUdajeOsobyResponse" type="BaseResponseType"/>
+    <xs:element name="TestRequest" type="BaseRequestType"/>
+    <xs:element name="TestResponse" type="BaseResponseType"/>
+    <xs:element name="OveritOsobyHromadneRequest">
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="BaseRequestType">
+                    <xs:sequence>
+                        <xs:element name="Osoby" type="OsobyType" />
+                    </xs:sequence>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="OveritOsobyHromadneResponse">
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="BaseResponseType">
+                    <xs:sequence>
+                        <xs:element name="CisloDavky" type="UUIDType"/>
+                    </xs:sequence>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="ZiskatVysledkyOveritOsobyHromadneRequest">
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="BaseRequestType">
+                    <xs:sequence>
+                        <xs:element name="CisloDavky" type="UUIDType"/>
+                    </xs:sequence>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="ZiskatVysledkyOveritOsobyHromadneResponse">
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="BaseResponseType">
+                    <xs:sequence>
+                        <xs:element name="Stav" type="StavZpracovaniDavkyType"/>
+                        <xs:element name="Osoby" type="OsobaKOvereniVysledekType" />
+                    </xs:sequence>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="ErrorMessage" type="ErrorMessageType"/>
+</xs:schema>

@@ -1,0 +1,17 @@
+﻿{
+  "duvod": "Vstup",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Břetislav",
+    "prijmeni": "Pluhař",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "1972-10-17",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": {
+      "mistoNarozeniKod": 554782 	  
+    },
+    "trvalyPobyt": {
+      "trvalyPobytKod": 18858261
+	}
+  }
+}

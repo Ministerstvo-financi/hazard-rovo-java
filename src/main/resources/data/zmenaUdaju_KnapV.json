@@ -1,0 +1,18 @@
+{
+  "hid": "ea33d6c4-ae0a-4feb-a459-cbc53baacdfc",
+  "osoba": {
+    "jmeno": "VALDEMAR",
+    "prijmeni": "KNAP",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "1984-08-23",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": {
+      "mistoNarozeniCR": {
+        "obec": "Plzeň",
+        "okres": "Plzeň-město"
+      },
+      "mistoNarozeniSvet": null
+    },
+    "trvalyPobyt": null
+  }
+}

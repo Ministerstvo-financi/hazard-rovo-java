@@ -1,0 +1,26 @@
+{
+  "duvod": "Registrace",
+  "hid": null,
+  "osoba": {
+    "jmeno": "KaTeRiNa",
+    "prijmeni": "mElIcHaRoVA",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "2008-06-11",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": {
+      "mistoNarozeniCR": {
+        "obec": "Ceske Budejovice",
+        "okres": "Ceske Budejovice"
+      },
+	  "mistoNarozeniSvet": null	  	  
+    },
+    "trvalyPobyt": {
+      "trvalyPobytCR": {
+        "ulice": "U Tri lvU",
+        "cisloOrientacni": 4,
+        "obec": "CeskE BudejovicE",
+        "psc": 37001
+      }
+	}
+  }
+}

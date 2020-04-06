@@ -1,0 +1,29 @@
+{
+  "duvod": "Registrace",
+  "hid": null,
+  "osoba": {
+    "jmeno": "David",
+    "prijmeni": "Novák",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "1980-06-08",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": {
+      "mistoNarozeniKod": null,
+      "mistoNarozeniCR": {
+        "obec": "Stod",
+        "okres": "Plzeň-jih"
+      },
+	  "mistoNarozeniSvet": null	  	  
+    },
+    "trvalyPobyt": {
+      "trvalyPobytCR": {
+        "ulice": "Karlovo náměstí",
+        "cisloPopisneEvidencni": 285,
+        "cisloObvodMestaPrahy": 27,
+        "cisloOrientacni": 19,
+        "obec": "Praha",
+        "psc": 12000
+      }
+	}
+  }
+}

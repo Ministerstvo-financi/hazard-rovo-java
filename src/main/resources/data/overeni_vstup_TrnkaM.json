@@ -1,0 +1,20 @@
+﻿{
+  "duvod": "Vstup",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Matěj",
+    "prijmeni": "Trnka",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "1962-10-22",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": null,
+    "trvalyPobyt": {
+      "trvalyPobytCR": {
+        "ulice": "Jiřičná",
+        "cisloPopisneEvidencni": 27,
+        "obec": "Petrovice u Sušice",
+        "psc": 34201
+      }
+	}
+  }
+}

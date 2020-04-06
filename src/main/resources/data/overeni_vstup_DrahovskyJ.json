@@ -1,0 +1,19 @@
+﻿{
+  "duvod": "Vstup",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Jaromír",
+    "prijmeni": "Drahovský",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "1954-02-16",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": {
+      "mistoNarozeniCR": {
+        "obec": "Praha",
+        "okres": "Praha-město"
+      },
+	  "mistoNarozeniSvet": null	  	  
+    },
+    "trvalyPobyt": null
+  }
+}

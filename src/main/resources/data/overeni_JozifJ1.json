@@ -1,0 +1,27 @@
+{
+  "duvod": "Registrace",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Jan",
+    "prijmeni": "Jozíf",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "1988-08-08",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": {
+      "mistoNarozeniCR": {
+        "obec": "Most",
+        "okres": "Most"
+      },
+	  "mistoNarozeniSvet": null	  	  
+    },
+    "trvalyPobyt": {
+      "trvalyPobytCR": {
+        "ulice": "Františka Halase",
+        "cisloPopisneEvidencni": 2617,
+        "cisloOrientacni": 6,
+        "obec": "Most",
+        "psc": 43401
+      }
+	}
+  }
+}

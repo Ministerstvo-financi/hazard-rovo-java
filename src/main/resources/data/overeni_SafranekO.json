@@ -1,0 +1,13 @@
+{
+  "duvod": "Registrace",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Oskar",
+    "prijmeni": "Šafránek",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "2010-08-27",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": null,
+    "trvalyPobyt": null
+  }
+}

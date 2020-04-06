@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions targetNamespace="http://hazard.mfcr.cz/rovo/v1"
+             xmlns:tns="http://hazard.mfcr.cz/rovo/v1"
+             xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+             xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+             xmlns="http://schemas.xmlsoap.org/wsdl/"
+             xmlns:aisg="http://hazard.mfcr.cz/rovo/v1">
+    <documentation>
+        Ucel: Sluzba pro overeni a zmeny udaju osob v souvislosti s hazardnimi hrami.
+        Verze: 1.0
+        Vlastnik : Ministerstvo financi Ceske republiky
+    </documentation>
+    <types>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema">
+            <import namespace="http://hazard.mfcr.cz/rovo/v1" schemaLocation="aisg.xsd"/>
+        </schema>
+    </types>
+
+    <message name="ErrorMessage">
+        <part name="fault" element="aisg:ErrorMessage"/>
+    </message>
+    <message name="OveritOsobuRequest">
+        <part name="OveritOsobuRequest" element="aisg:OveritOsobuRequest"/>
+    </message>
+    <message name="OveritOsobuResponse">
+        <part name="OveritOsobuResponse" element="aisg:OveritOsobuResponse"/>
+    </message>
+
+    <message name="ZmenitUdajeOsobyRequest">
+        <part name="ZmenitUdajeOsobyRequest" element="aisg:ZmenitUdajeOsobyRequest"/>
+    </message>
+    <message name="ZmenitUdajeOsobyResponse">
+        <part name="ZmenitUdajeOsobyResponse" element="aisg:ZmenitUdajeOsobyResponse"/>
+    </message>
+
+    <message name="TestRequest">
+        <part name="TestRequest" element="aisg:TestRequest"/>
+    </message>
+    <message name="TestResponse">
+        <part name="TestResponse" element="aisg:TestResponse"/>
+    </message>
+
+    <!-- ASYNC -->
+    <message name="OveritOsobyHromadneRequest">
+        <part name="OveritOsobyHromadneRequest" element="aisg:OveritOsobyHromadneRequest"/>
+    </message>
+    <message name="OveritOsobyHromadneResponse">
+        <part name="OveritOsobyHromadneResponse" element="aisg:OveritOsobyHromadneResponse"/>
+    </message>
+
+    <message name="ZiskatVysledkyOveritOsobyHromadneRequest">
+        <part name="ZiskatVysledkyOveritOsobyHromadneRequest" element="aisg:ZiskatVysledkyOveritOsobyHromadneRequest"/>
+    </message>
+    <message name="ZiskatVysledkyOveritOsobyHromadneResponse">
+        <part name="ZiskatVysledkyOveritOsobyHromadneResponse" element="aisg:ZiskatVysledkyOveritOsobyHromadneResponse"/>
+    </message>
+
+
+    <portType name="AisgPort">
+        <operation name="OveritOsobu">
+            <input message="tns:OveritOsobuRequest"/>
+            <output message="tns:OveritOsobuResponse"/>
+            <fault name="ErrorMessage" message="tns:ErrorMessage"/>
+        </operation>
+        <operation name="ZmenitUdajeOsoby">
+            <input message="tns:ZmenitUdajeOsobyRequest"/>
+            <output message="tns:ZmenitUdajeOsobyResponse"/>
+            <fault name="ErrorMessage" message="tns:ErrorMessage"/>
+        </operation>
+        <operation name="Test">
+            <input message="tns:TestRequest"/>
+            <output message="tns:TestResponse"/>
+            <fault name="ErrorMessage" message="tns:ErrorMessage"/>
+        </operation>
+        <operation name="OveritOsobyHromadne">
+            <input message="tns:OveritOsobyHromadneRequest"/>
+            <output message="tns:OveritOsobyHromadneResponse"/>
+            <fault name="ErrorMessage" message="tns:ErrorMessage"/>
+        </operation>
+        <operation name="ZiskatVysledkyOveritOsobyHromadne">
+            <input message="tns:ZiskatVysledkyOveritOsobyHromadneRequest"/>
+            <output message="tns:ZiskatVysledkyOveritOsobyHromadneResponse"/>
+            <fault name="ErrorMessage" message="tns:ErrorMessage"/>
+        </operation>
+    </portType>
+
+    <binding name="Aisg" type="tns:AisgPort">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="OveritOsobu">
+            <soap:operation soapAction="OveritOsobu" style="document"/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ErrorMessage">
+                <soap:fault name="ErrorMessage" use="literal" />
+            </fault>
+        </operation>
+        <operation name="ZmenitUdajeOsoby">
+            <soap:operation soapAction="ZmenitUdajeOsoby" style="document"/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ErrorMessage">
+                <soap:fault name="ErrorMessage" use="literal" />
+            </fault>
+        </operation>
+        <operation name="Test">
+            <soap:operation soapAction="Test" style="document"/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ErrorMessage">
+                <soap:fault name="ErrorMessage" use="literal" />
+            </fault>
+        </operation>
+        <operation name="OveritOsobyHromadne">
+            <soap:operation soapAction="OveritOsobyHromadne" style="document"/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ErrorMessage">
+                <soap:fault name="ErrorMessage" use="literal" />
+            </fault>
+        </operation>
+        <operation name="ZiskatVysledkyOveritOsobyHromadne">
+            <soap:operation soapAction="ZiskatVysledkyOveritOsobyHromadne" style="document"/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="ErrorMessage">
+                <soap:fault name="ErrorMessage" use="literal" />
+            </fault>
+        </operation>
+    </binding>
+
+    <service name="Aisg">
+        <port binding="tns:Aisg" name="Aisg">
+            <soap:address location="https://api.hazard.mfcr.cz/rovo/v1"/>
+        </port>
+    </service>
+
+</definitions>

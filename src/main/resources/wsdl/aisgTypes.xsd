@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://hazard.mfcr.cz/rovo/v1"
+           xmlns="http://hazard.mfcr.cz/rovo/v1"
+           elementFormDefault="qualified" id="hraciTypes">
+    <xs:simpleType name="UUIDType">
+        <xs:annotation>
+            <xs:documentation xml:lang="cs">Datový typ pro unikátní identifikátory podle RFC 4122 vydaném IETF.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="AdresniMistoKodType">
+        <xs:annotation>
+            <xs:documentation xml:lang="cs">Kód adresního místa trvalého pobytu osoby ze systému RUIAN v ČR.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="999999999"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Nazev48Type">
+        <xs:annotation>
+            <xs:documentation xml:lang="cs">Název na 48 znaků.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="48"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Nazev32Type">
+        <xs:annotation>
+            <xs:documentation xml:lang="cs">Název na 32 znaků.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="32"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="ZnakType">
+        <xs:annotation>
+            <xs:documentation xml:lang="cs">Jednoznakový řetězec.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:length value="1" fixed="true"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="StatType">
+        <xs:annotation>
+            <xs:documentation>Dvoumístný alfabetický kód (A-2) státu dle číselníku zemí https://www.czso.cz/csu/czso/ciselnik_zemi_-czem-.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="PscType">
+        <xs:annotation>
+            <xs:documentation xml:lang="cs">Poštovní směrovací číslo.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:int">
+            <xs:maxInclusive value="99999"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="NonEmptyNormStringType">
+        <xs:annotation>
+            <xs:documentation xml:lang="cs">Neprázdný řetězec jako základ dat, kde není akceptován prázdný údaj a nejsou akceptovány prázdné znaky na začátku a konci.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[\S]+.*[\S]+"/>
+            <xs:pattern value="[\S]{1}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="PrijmeniType">
+        <xs:annotation>
+            <xs:documentation xml:lang="cs">Příjmení osoby.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="NonEmptyNormStringType">
+            <xs:maxLength value="100"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="JmenoType">
+        <xs:annotation>
+            <xs:documentation xml:lang="cs">Jméno osoby.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="NonEmptyNormStringType">
+            <xs:maxLength value="100"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="DlouhyTextType">
+        <xs:annotation>
+            <xs:documentation xml:lang="cs">Řetězec znaků psaný latinkou. Maximální délka řetězce může být 1000 znaků.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="1000"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="KratkyTextType">
+        <xs:annotation>
+            <xs:documentation xml:lang="cs">Řetězec znaků psaný latinkou. Maximální délka řetězce může být 50 znaků.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="50"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="StredniTextType">
+        <xs:annotation>
+            <xs:documentation xml:lang="cs">Řetězec znaků psaný latinkou. Maximální délka řetězce může být 255 znaků.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="255"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="DuvodZadostiType">
+        <xs:annotation>
+            <xs:documentation xml:lang="cs">Důvod požadavku na ověření osoby.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Registrace">
+                <xs:annotation>
+                    <xs:documentation>Registrace u provozovatele.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="Vstup">
+                <xs:annotation>
+                    <xs:documentation>Vstup do herního prostoru.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="Prihlaseni">
+                <xs:annotation>
+                    <xs:documentation>Přihlášení k uživatelskému kontu.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="VysledekKontrolyPlnoletostiType">
+        <xs:annotation>
+            <xs:documentation>Výsledek kontroly, zda je osoba starší 18 let.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ANO">
+                <xs:annotation>
+                    <xs:documentation>Osoba je plnoletá.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="NE">
+                <xs:annotation>
+                    <xs:documentation>Osoba není plnoletá.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="VysledekKontrolyRVOType">
+        <xs:annotation>
+            <xs:documentation>Výsledek kontroly, zda je osoba zapsána v RVO.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ANO">
+                <xs:annotation>
+                    <xs:documentation>Osoba je zapsána v RVO.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="NE">
+                <xs:annotation>
+                    <xs:documentation>Osoba není zapsána v RVO.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="NEOVERENO">
+                <xs:annotation>
+                    <xs:documentation>Osobu se nepodařilo ztotožnit.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="VysledekKontrolyROBType">
+        <xs:annotation>
+            <xs:documentation>Výsledek kontroly, zda byla osoba nalezena v ROB.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="NALEZENA">
+                <xs:annotation>
+                    <xs:documentation>Osoba byla nalezena v ROB.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="MRTVA">
+                <xs:annotation>
+                    <xs:documentation>Osoba dle ROB zemřela.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="NENALEZENA">
+                <xs:annotation>
+                    <xs:documentation>Osoba nebyla v ROB nalezena.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="DUPLICITA">
+                <xs:annotation>
+                    <xs:documentation>Nalezeno více osob v ROB.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="NEODPOVEZENO">
+                <xs:annotation>
+                    <xs:documentation>Nepodařilo se získat odpověď z ROB.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="NEPROVEDENA">
+                <xs:annotation>
+                    <xs:documentation>Ověření v ROB nebylo provedeno.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="StavZpracovaniDavkyType">
+        <xs:annotation>
+            <xs:documentation>Stav zpracování dávky.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Prijata">
+                <xs:annotation>
+                    <xs:documentation>U všech osob dosud nebylo provedeno ověření, seznam osob k ověření s výsledky ověření není součástí odpovědi služby.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="Zpracovana">
+                <xs:annotation>
+                    <xs:documentation>U všech osob bylo provedeno ověření a seznam osob k ověření s výsledky ověření je součástí odpovědi služby</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="Ukoncena">
+                <xs:annotation>
+                    <xs:documentation>U všech osob bylo provedeno ověření, ale doba pro vyzvednutí dávky již vypršela, seznam osob k ověření s výsledky ověření není součástí odpovědi služby. </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="ErrorKodType">
+        <xs:annotation>
+            <xs:documentation>Číselný kód chyby, viz technická specifikace.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:int">
+            <xs:minExclusive value="1"/>
+            <xs:maxInclusive value="9999"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="TrvalyPobytCRType">
+        <xs:annotation>
+            <xs:documentation>Trvalý pobyt osoby v ČR.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="Ulice" type="Nazev48Type" minOccurs="0"/>
+            <xs:element name="CisloPopisneEvidencni" type="xs:positiveInteger" minOccurs="0"/>
+            <xs:element name="CisloOrientacni" type="xs:positiveInteger" minOccurs="0"/>
+            <xs:element name="CisloOrientacniDodatek" type="ZnakType" minOccurs="0"/>
+            <xs:element name="CisloObvodMestaPrahy" type="xs:positiveInteger" minOccurs="0"/>
+            <xs:element name="ObecCast" type="Nazev48Type" minOccurs="0"/>
+            <xs:element name="Obec" type="Nazev48Type"/>
+            <xs:element name="PSC" type="PscType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="TrvalyPobytSvetType">
+        <xs:annotation>
+            <xs:documentation>Trvalý pobyt osoby mimo ČR.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="Ulice" type="Nazev48Type" minOccurs="0"/>
+            <xs:element name="CisloPopisneEvidencni" type="xs:positiveInteger" minOccurs="0"/>
+            <xs:element name="CisloOrientacni" type="xs:positiveInteger" minOccurs="0"/>
+            <xs:element name="CisloOrientacniDodatek" type="ZnakType" minOccurs="0"/>
+            <xs:element name="ObecCast" type="Nazev48Type" minOccurs="0"/>
+            <xs:element name="Obec" type="Nazev48Type"/>
+            <xs:element name="PSC" type="KratkyTextType" minOccurs="0"/>
+            <xs:element name="Stat" type="StatType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="MistoNarozeniCRType">
+        <xs:annotation>
+            <xs:documentation>Místo narození v ČR.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="Obec" type="Nazev48Type"/>
+            <xs:element name="Okres" type="Nazev32Type"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="MistoNarozeniSvetType">
+        <xs:annotation>
+            <xs:documentation>Místo narození mimo ČR.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="Misto">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="100"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="Stat" type="StatType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="MistoNarozeniType">
+        <xs:annotation>
+            <xs:documentation>Místo narození osoby.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:choice>
+                <xs:element name="MistoNarozeniKod">
+                    <xs:annotation>
+                        <xs:documentation>Kód obce místa narození - pro ČR dle RUIAN.</xs:documentation>
+                    </xs:annotation>
+                    <xs:simpleType>
+                        <xs:restriction base="xs:int">
+                            <xs:maxInclusive value="999999"/>
+                            <xs:minInclusive value="0"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="MistoNarozeniCR" type="MistoNarozeniCRType"/>
+                <xs:element name="MistoNarozeniSvet" type="MistoNarozeniSvetType"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="TrvalyPobytType">
+        <xs:annotation>
+            <xs:documentation>Trvalý pobyt osoby.</xs:documentation>
+        </xs:annotation>
+        <xs:choice>
+            <xs:element name="TrvalyPobytKod" type="AdresniMistoKodType"/>
+            <xs:element name="TrvalyPobytCR" type="TrvalyPobytCRType"/>
+            <xs:element name="TrvalyPobytSvet" type="TrvalyPobytSvetType"/>
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="OsobaType">
+        <xs:annotation>
+            <xs:documentation>Identifikační údaje o osobě.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="Jmeno" type="JmenoType"/>
+            <xs:element name="Prijmeni" type="PrijmeniType"/>
+            <xs:element name="RodnePrijmeni" type="PrijmeniType" minOccurs="0"/>
+            <xs:element name="DatumNarozeni" type="xs:date"/>
+            <xs:element name="StatniObcanstvi" type="StatType"/>
+            <xs:element name="MistoNarozeni" type="MistoNarozeniType" minOccurs="0"/>
+            <xs:element name="TrvalyPobyt" type="TrvalyPobytType" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ErrorMessageType">
+        <xs:annotation>
+            <xs:documentation>Chybová zpráva systému.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="Kod" type="ErrorKodType"/>
+            <xs:element name="Popis" type="StredniTextType" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="OsobaKOvereniType">
+        <xs:annotation>
+            <xs:documentation>Identifikační údaje osoby k ověření.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="IdentifikaceZaznamu" type="KratkyTextType"/>
+            <xs:element name="Osoba" type="OsobaType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="OsobyType">
+        <xs:annotation>
+            <xs:documentation>Seznam osob k ověření.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="OsobaKOvereni" type="OsobaKOvereniType" maxOccurs="1000"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="OsobaKOvereniVysledekType">
+        <xs:annotation>
+            <xs:documentation>Výsledky ověření osoby.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="OsobaKOvereniVysledek" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="IdentifikaceZaznamu" type="KratkyTextType"/>
+                        <xs:element name="HID" type="UUIDType" minOccurs="0"/>
+                        <xs:group ref="VysledkyOvereniGroup"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="BaseResponseType">
+        <xs:annotation>
+            <xs:documentation>Údaje, společné pro všechny příchozí zprávy.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="CisloPozadavku" type="UUIDType"/>
+            <xs:element name="IdentifikacePozadavku" type="DlouhyTextType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="BaseRequestType">
+        <xs:annotation>
+            <xs:documentation>Údaje, společné pro všechny odchozí zprávy.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="CisloPozadavku" type="UUIDType"/>
+            <xs:element name="ICO_VCP" type="KratkyTextType" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:group name="VysledkyOvereniGroup">
+        <xs:annotation>
+            <xs:documentation>Výsledek ověření osoby.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="Plnoleta" type="VysledekKontrolyPlnoletostiType"/>
+            <xs:element name="NalezenaROB" type="VysledekKontrolyROBType"/>
+            <xs:element name="NalezenaRVO" type="VysledekKontrolyRVOType"/>
+        </xs:sequence>
+    </xs:group>
+</xs:schema>

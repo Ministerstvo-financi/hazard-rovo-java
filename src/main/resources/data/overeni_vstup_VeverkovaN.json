@@ -1,0 +1,26 @@
+﻿{
+  "duvod": "Vstup",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Nikola",
+    "prijmeni": "Veverková",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "1966-02-22",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": {
+      "mistoNarozeniCR": {
+        "obec": "Brno",
+        "okres": "Brno-město"
+      },
+	  "mistoNarozeniSvet": null	  	  
+    },
+    "trvalyPobyt": {
+      "trvalyPobytCR": {
+        "ulice": "Nerudova",
+        "cisloPopisneEvidencni": 276,
+        "obec": "Vyškov",
+        "psc": 68201
+      }
+	}
+  }
+}

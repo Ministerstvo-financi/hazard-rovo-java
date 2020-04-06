@@ -1,0 +1,13 @@
+﻿{
+  "duvod": "Vstup",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Přemysl",
+    "prijmeni": "Šilhavý",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "1980-05-29",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": null,
+    "trvalyPobyt": null
+  }
+}

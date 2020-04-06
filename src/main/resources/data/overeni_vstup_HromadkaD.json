@@ -1,0 +1,24 @@
+﻿{
+  "duvod": "Vstup",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Dalibor",
+    "prijmeni": "Hromádka",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "2012-04-02",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": {
+      "mistoNarozeniCR": {
+        "obec": "Třebíč",
+        "okres": "Třebíč"
+      },
+	  "mistoNarozeniSvet": null	  	  
+    },
+    "trvalyPobyt": {
+      "trvalyPobytCR": {
+        "obec": "Jemnice",
+        "psc": 67531
+      }
+	}
+  }
+}

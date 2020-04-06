@@ -1,0 +1,26 @@
+{
+  "duvod": "Registrace",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Ferdinand",
+    "prijmeni": "Procházka",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "1954-07-08",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": {
+      "mistoNarozeniCR": {
+        "obec": "Brno",
+        "okres": "Brno-město"
+      },
+	  "mistoNarozeniSvet": null	  	  
+    },
+    "trvalyPobyt": {
+      "trvalyPobytCR": {
+        "ulice": null,
+        "cisloPopisneEvidencni": 34,
+        "obec": "Arnoltice",
+        "psc": 40714
+      }
+	}
+  }
+}

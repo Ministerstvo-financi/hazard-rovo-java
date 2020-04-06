@@ -1,0 +1,11 @@
+{
+  "duvod": "Registrace",
+  "hid": null,
+  "osoba": {
+    "jmeno": "George",
+    "prijmeni": "McQueen",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "1991-08-01",
+    "statniObcanstvi": "GB"
+  }
+}

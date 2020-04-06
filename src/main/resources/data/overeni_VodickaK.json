@@ -1,0 +1,26 @@
+{
+  "duvod": "Registrace",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Karel",
+    "prijmeni": "Vodička",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "2010-08-06",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": {
+      "mistoNarozeniCR": {
+        "obec": "Praha",
+        "okres": "Hlavní město Praha"
+      },
+	  "mistoNarozeniSvet": null	  	  
+    },
+    "trvalyPobyt": {
+      "trvalyPobytCR": {
+        "ulice": "Karlovarská",
+        "cisloPopisneEvidencni": 1,
+        "obec": "Plzeň",
+        "psc": 30100
+      }
+	}
+  }
+}

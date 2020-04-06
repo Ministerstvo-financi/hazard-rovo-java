@@ -1,0 +1,16 @@
+﻿{
+  "duvod": "Vstup",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Diana",
+    "prijmeni": "Smejkalová",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "2009-10-11",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": null,
+    "trvalyPobyt": {
+      "trvalyPobytKod": 21263345,
+      "trvalyPobytCR": null
+	}
+  }
+}

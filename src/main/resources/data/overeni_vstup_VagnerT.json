@@ -1,0 +1,26 @@
+﻿{
+  "duvod": "Vstup",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Tadeáš",
+    "prijmeni": "Vágner",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "2006-04-24",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": {
+      "mistoNarozeniCR": {
+        "obec": "Třeboň",
+        "okres": "Jindřichův Hradec"
+      },
+	  "mistoNarozeniSvet": null	  	  
+    },
+    "trvalyPobyt": {
+      "trvalyPobytCR": {
+        "ulice": "Svobody",
+        "cisloPopisneEvidencni": 461,
+        "obec": "Třeboň",
+        "psc": 37901
+      }
+	}
+  }
+}

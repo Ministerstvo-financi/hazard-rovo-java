@@ -1,0 +1,13 @@
+{
+  "duvod": "Registrace",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Kazimír",
+    "prijmeni": "Blaha",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "2010-02-24",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": null,
+    "trvalyPobyt": null
+  }
+}

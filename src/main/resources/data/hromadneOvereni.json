@@ -1,0 +1,124 @@
+{
+  "osoby": {
+    "osobaKOvereni": [
+      {
+        "identifikaceZaznamu": "o1",
+        "osoba": {
+    "jmeno": "David",
+    "prijmeni": "Novák",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "1980-06-08",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": {
+      "mistoNarozeniKod": null,
+      "mistoNarozeniCR": {
+        "obec": "Stod",
+        "okres": "Plzeň-jih"
+      },
+	  "mistoNarozeniSvet": null	  	  
+    },
+    "trvalyPobyt": {
+      "trvalyPobytCR": {
+        "ulice": "Karlovo náměstí",
+        "cisloPopisneEvidencni": 285,
+        "cisloObvodMestaPrahy": 27,
+        "cisloOrientacni": 19,
+        "obec": "Praha",
+        "psc": 12000
+      }
+	}
+  }
+      },
+      {
+        "identifikaceZaznamu": "o2",
+        "osoba": {
+    "jmeno": "Zuzana",
+    "prijmeni": "Matulová",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "1963-02-21",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": {
+      "mistoNarozeniKod": null,
+      "mistoNarozeniCR": {
+        "obec": "Arnoltice",
+        "okres": "Děčín"
+      },
+	  "mistoNarozeniSvet": null	  	  
+    },
+	"trvalyPobyt": {
+    "trvalyPobytKod": 263605
+	}
+  }
+      },
+      {
+        "identifikaceZaznamu": "o3",
+        "osoba": {
+    "jmeno": "Andrij",
+    "prijmeni": "Franko",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "1971-10-17",
+    "statniObcanstvi": "UA",
+    "mistoNarozeni": {
+      "mistoNarozeniSvet": {
+        "misto": "Kyjev",
+        "stat": "UA"
+      }
+    },
+    "trvalyPobyt": {
+    "trvalyPobytSvet": {
+       "ulice": "Hryhoriia Andriushchenka St",
+       "cisloPopisneEvidencni": "19",
+       "obec": "Kyiv",
+       "psc": null,
+	   "stat": "UA"
+      }
+    }
+  }
+},
+      {
+        "identifikaceZaznamu": "o4",
+        "osoba": {
+    "jmeno": "Kateřina",
+    "prijmeni": "Staňková",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "1979-08-21",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": {
+      "mistoNarozeniKod": 558885,
+      "mistoNarozeniCR": null,
+	  "mistoNarozeniSvet": null	  	  
+    },
+	"trvalyPobyt": {
+    "trvalyPobytKod": 6912
+  }
+  }
+},
+{
+        "identifikaceZaznamu": "o5",
+        "osoba": {
+    "jmeno": "Petr",
+    "prijmeni": "Nowak",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "1985-10-07",
+    "statniObcanstvi": "DE",
+    "mistoNarozeni": {
+      "mistoNarozeniCR": null,
+	  "mistoNarozeniSvet": {
+        "misto": "Berlin",
+        "stat": "DE"
+      }	  	  
+    },
+    "trvalyPobyt": {
+      "trvalyPobytSvet": {
+        "ulice": "Angerweg",
+        "cisloPopisneEvidencni": 50,
+        "obec": "Bad Kohlgrub",
+        "psc": 82433,
+        "stat": "DE"
+      }
+	}
+  }
+}
+    ]
+  }
+}

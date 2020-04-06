@@ -1,0 +1,26 @@
+{
+  "duvod": "Registrace",
+  "hid": null,
+  "osoba": {
+    "jmeno": "František",
+    "prijmeni": "Mladý",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "2010-08-04",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": {
+      "mistoNarozeniCR": {
+        "obec": "Toužim",
+        "okres": "Karlovy Vary"
+      },
+	  "mistoNarozeniSvet": null	  	  
+    },
+    "trvalyPobyt": {
+      "trvalyPobytCR": {
+        "ulice": null,
+        "cisloPopisneEvidencni": 44,
+        "obec": "Dolní Podluží",
+        "psc": 40755
+      }
+	}
+  }
+}

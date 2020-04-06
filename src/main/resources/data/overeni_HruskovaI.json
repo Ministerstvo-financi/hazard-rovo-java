@@ -1,0 +1,10 @@
+{
+  "duvod": "Registrace",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Irma",
+    "prijmeni": "Hrušková",
+    "datumNarozeni": "1986-07-16",
+    "statniObcanstvi": "CZ"
+  }
+}

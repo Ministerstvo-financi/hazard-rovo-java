@@ -1,0 +1,17 @@
+{
+  "duvod": "Registrace",
+  "hid": null,
+  "osoba": {
+    "jmeno": "JIŘÍ",
+    "prijmeni": "HOŘEJŠÍ",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "1978-07-05",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": {
+      "mistoNarozeniKod": 593001,
+      "mistoNarozeniCR": null,
+      "mistoNarozeniSvet": null
+    },
+    "trvalyPobyt": null
+  }
+}

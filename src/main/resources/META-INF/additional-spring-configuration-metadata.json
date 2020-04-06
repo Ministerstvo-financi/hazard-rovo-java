@@ -1,0 +1,53 @@
+{
+  "properties": [
+    {
+      "name": "client.address",
+      "type": "java.lang.String",
+      "description": "Description for client.address."
+    },
+    {
+      "name": "client.icovcp",
+      "type": "java.lang.String",
+      "description": "Description for client.icovcp."
+    },
+    {
+      "name": "client.trust.keystoreType",
+      "type": "java.lang.String",
+      "description": "Description for client.trust.keystoreType."
+    },
+    {
+      "name": "client.trust.keystorePassword",
+      "type": "java.lang.String",
+      "description": "Description for client.trust.keystorePassword."
+    },
+    {
+      "name": "client.trust.keystoreLocation",
+      "type": "java.lang.String",
+      "description": "Description for client.trust.keystoreLocation."
+    },
+    {
+      "name": "client.sign.keyPassword",
+      "type": "java.lang.String",
+      "description": "Description for client.sign.keyPassword."
+    },
+    {
+      "name": "client.sign.keyAlias",
+      "type": "java.lang.String",
+      "description": "Description for client.sign.keyAlias."
+    },
+    {
+      "name": "client.sign.keystoreType",
+      "type": "java.lang.String",
+      "description": "Description for client.sign.keystoreType."
+    },
+    {
+      "name": "client.sign.keystorePassword",
+      "type": "java.lang.String",
+      "description": "Description for client.sign.keystorePassword."
+    },
+    {
+      "name": "client.sign.keystoreLocation",
+      "type": "java.lang.String",
+      "description": "Description for client.sign.keystoreLocation."
+    }
+  ] }

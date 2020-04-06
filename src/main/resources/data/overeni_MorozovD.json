@@ -1,0 +1,27 @@
+{
+  "duvod": "Registrace",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Dmitry",
+    "prijmeni": "Morozov",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "2008-12-12",
+    "statniObcanstvi": "RU",
+    "mistoNarozeni": {
+      "mistoNarozeniCR": null,
+	  "mistoNarozeniSvet": {
+        "misto": "Kazaň",
+        "stat": "RU"
+      }	  	  
+    },
+    "trvalyPobyt": {
+      "trvalyPobytSvet": {
+        "ulice": "An Doveriye",
+        "cisloPopisneEvidencni": 12,
+        "obec": "Kazaň",
+        "psc": 420111,
+        "stat": "RU"
+      }
+	}
+  }
+}

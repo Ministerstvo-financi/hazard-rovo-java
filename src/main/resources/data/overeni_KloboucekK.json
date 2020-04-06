@@ -1,0 +1,14 @@
+{
+  "duvod": "Registrace",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Kazimír",
+    "prijmeni": "Klobouček",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "1932-03-25",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": null,
+	
+    "trvalyPobyt": null
+	}
+  }

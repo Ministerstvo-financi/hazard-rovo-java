@@ -1,0 +1,24 @@
+{
+  "duvod": "Registrace",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Pankrác",
+    "prijmeni": "Kotrba",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "2008-05-27",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": {
+      "mistoNarozeniKod": 505927,
+      "mistoNarozeniCR": null,
+	  "mistoNarozeniSvet": null	  	  
+    },
+    "trvalyPobyt": {
+      "trvalyPobytCR": {
+        "ulice": "Topolová",
+        "cisloPopisneEvidencni": 805,
+        "obec": "Prachatice",
+        "psc": 38301
+      }
+	}
+  }
+}

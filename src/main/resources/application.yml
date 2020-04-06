@@ -1,0 +1,13 @@
+client:
+  address: https://api-pg.hazard.mfcr.cz/rovo/v1
+  sign:
+    keystoreLocation: cert/hbr-pfx.pfx
+    keystorePassword: unsafe
+    keystoreType: PKCS12
+    keyAlias: 1
+    keyPassword: unsafe
+  trust:
+    keystoreLocation: cert/truststore.jks
+    keystorePassword: changeit
+    keystoreType: JKS
+  icovcp: 123456

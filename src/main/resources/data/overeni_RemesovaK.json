@@ -1,0 +1,19 @@
+{
+  "duvod": "Registrace",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Kateřina",
+    "prijmeni": "Remešová",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "2009-05-19",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": {
+      "mistoNarozeniCR": {
+        "obec": "Brno",
+        "okres": "Brno-město"
+      },
+	  "mistoNarozeniSvet": null	  	  
+    },
+    "trvalyPobyt": null
+  }
+}

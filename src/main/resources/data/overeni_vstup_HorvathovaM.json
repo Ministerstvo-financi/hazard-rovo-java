@@ -1,0 +1,13 @@
+{
+  "duvod": "Vstup",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Michaela",
+    "prijmeni": "Horváthová",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "2011-06-11",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": null,
+    "trvalyPobyt": null
+  }
+}

@@ -1,0 +1,23 @@
+{
+	"duvod": "Registrace",
+	"hid": null,
+	"osoba": {
+		"jmeno": "Jan",
+		"prijmeni": "Jozíf",
+		"rodnePrijmeni": null,
+		"datumNarozeni": "1988-08-08",
+		"statniObcanstvi": "CZ",
+		"mistoNarozeni": {
+			"mistoNarozeniCR": {
+				"obec": "Most",
+				"okres": "Most"
+			}
+		},
+		"trvalyPobyt": {
+      "trvalyPobytCR": {
+        "obec": "Most",
+        "psc": 43401
+      }
+	}
+	}
+}

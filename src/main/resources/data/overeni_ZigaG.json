@@ -1,0 +1,13 @@
+{
+  "duvod": "Registrace",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Gabriel",
+    "prijmeni": "Žiga",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "2006-03-25",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": null,
+    "trvalyPobyt": null
+  }
+}

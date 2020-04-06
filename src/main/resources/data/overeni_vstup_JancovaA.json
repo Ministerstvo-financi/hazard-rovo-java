@@ -1,0 +1,13 @@
+﻿{
+  "duvod": "Vstup",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Agáta",
+    "prijmeni": "Jančová",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "2008-05-15",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": null,
+    "trvalyPobyt": null
+  }
+}

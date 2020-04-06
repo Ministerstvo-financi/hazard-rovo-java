@@ -1,0 +1,27 @@
+{
+  "duvod": "Registrace",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Karl",
+    "prijmeni": "Mayer",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "1981-09-13",
+    "statniObcanstvi": "US",
+    "mistoNarozeni": {
+	  "mistoNarozeniSvet": {
+        "misto": "New York",
+        "stat": "US"
+      }	  	  
+    },
+    "trvalyPobyt": {
+      "trvalyPobytCR": {
+        "ulice": "Brněnská",
+        "cisloPopisneEvidencni": 988,
+        "cisloOrientacni": 8,
+        "cisloOrientacniDodatek": "a",
+        "obec": "Hustopeče",
+        "psc": 69301
+      }
+	}
+  }
+}

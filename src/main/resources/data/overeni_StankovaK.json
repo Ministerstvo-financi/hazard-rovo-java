@@ -1,0 +1,19 @@
+{
+  "duvod": "Registrace",
+  "hid": null,
+  "osoba": {
+    "jmeno": "Kateřina",
+    "prijmeni": "Staňková",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "1979-08-21",
+    "statniObcanstvi": "CZ",
+    "mistoNarozeni": {
+      "mistoNarozeniKod": 558885,
+      "mistoNarozeniCR": null,
+	  "mistoNarozeniSvet": null	  	  
+    },
+	"trvalyPobyt": {
+    "trvalyPobytKod": 6912
+  }
+  }
+}

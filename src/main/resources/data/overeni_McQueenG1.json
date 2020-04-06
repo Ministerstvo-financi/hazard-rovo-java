@@ -1,0 +1,27 @@
+{
+  "duvod": "Registrace",
+  "hid": null,
+  "osoba": {
+    "jmeno": "George",
+    "prijmeni": "McQueen",
+    "rodnePrijmeni": null,
+    "datumNarozeni": "1991-08-01",
+    "statniObcanstvi": "GB",
+    "mistoNarozeni": {
+      "mistoNarozeniCR": null,
+	  "mistoNarozeniSvet": {
+        "misto": "Manchester",
+        "stat": "GB"
+      }	  	  
+    },
+    "trvalyPobyt": {
+      "trvalyPobytSvet": {
+        "ulice": "Oxford Rd",
+        "cisloPopisneEvidencni": 245,
+        "obec": "Manchester",
+        "psc": "M139SS",
+        "stat": "GB"
+      }
+	}
+  }
+}
